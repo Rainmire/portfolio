@@ -1362,14 +1362,14 @@
 		}
 
 			#header.alt:before {
-				-moz-transition: background-color 3s ease;
-				-webkit-transition: background-color 3s ease;
-				-ms-transition: background-color 3s ease;
-				transition: background-color 3s ease;
-				-moz-transition-delay: 1s;
+				-moz-transition: background-color 2s ease;
+				-webkit-transition: background-color 2s ease;
+				-ms-transition: background-color 2s ease;
+				transition: background-color 2s ease;
+				/*-moz-transition-delay: 1s;
 				-webkit-transition-delay: 1s;
 				-ms-transition-delay: 1s;
-				transition-delay: 1s;
+				transition-delay: 1s;*/
 			}
 
 			#header.alt h1 {
@@ -1390,14 +1390,38 @@
 				padding: 0 1.25em;
 			}
 
-			#header.alt .inner {
-				/*-moz-transition: opacity 2s ease;
+			/*#header.alt .inner {
+				-moz-transition: opacity 2s ease;
 				-webkit-transition: opacity 2s ease;
 				-ms-transition: opacity 2s ease;
 				transition: opacity 2s ease;
-				opacity: 1;*/
-				transform: translateX(200px);
-				transition: all 2.5s linear;
+				opacity: 1;
+			}*/
+
+			#header.alt .inner h1 {
+			  animation: 0.7s ease 0s 1 slideInFromRight;
+			}
+
+			#header.alt .inner p {
+			  animation: 0.7s ease 0s 1 slideInFromLeft;
+			}
+
+			@keyframes slideInFromRight {
+			  0% {
+			    transform: translateX(100%);
+			  }
+			  100% {
+			    transform: translateX(0);
+			  }
+			}
+
+			@keyframes slideInFromLeft {
+				0% {
+					transform: translateX(-100%);
+				}
+				100% {
+					transform: translateX(0);
+				}
 			}
 
 		body.is-loading #header.alt:before {

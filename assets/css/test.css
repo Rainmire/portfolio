@@ -1,0 +1,12 @@
+#header.alt .inner {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
