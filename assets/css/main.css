@@ -1366,10 +1366,10 @@
 				-webkit-transition: background-color 2s ease;
 				-ms-transition: background-color 2s ease;
 				transition: background-color 2s ease;
-				/*-moz-transition-delay: 1s;
-				-webkit-transition-delay: 1s;
-				-ms-transition-delay: 1s;
-				transition-delay: 1s;*/
+				-moz-transition-delay: 0.5s;
+				-webkit-transition-delay: 0.5s;
+				-ms-transition-delay: 0.5s;
+				transition-delay: 0.5s;
 			}
 
 			#header.alt h1 {
@@ -1386,7 +1386,7 @@
 				text-transform: uppercase;
 				letter-spacing: 0.325rem;
 				font-weight: 400;
-				font-size: 0.8em;
+				font-size: 1.5em;
 				padding: 0 1.25em;
 			}
 
@@ -1408,7 +1408,7 @@
 
 			@keyframes slideInFromRight {
 			  0% {
-			    transform: translateX(100%);
+			    transform: translateX(65vw);
 			  }
 			  100% {
 			    transform: translateX(0);
@@ -1417,7 +1417,7 @@
 
 			@keyframes slideInFromLeft {
 				0% {
-					transform: translateX(-100%);
+					transform: translateX(-65vw);
 				}
 				100% {
 					transform: translateX(0);
