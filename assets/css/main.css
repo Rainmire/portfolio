@@ -1380,38 +1380,34 @@
 				font-family: 'Poiret One', cursive;
 				text-transform: none;
 				letter-spacing: 0;
+				animation: 0.7s ease 0s 1 slideInFromRight;
 			}
 
 			#header.alt p {
 				text-transform: uppercase;
 				letter-spacing: 0.325rem;
 				font-weight: 400;
-				font-size: 1.5em;
+				font-size: 1.2em;
 				padding: 0 1.25em;
+				animation: 0.7s ease 0s 1 slideInFromLeft;
 			}
 
-			/*#header.alt .inner {
+			#header.alt .inner {
 				-moz-transition: opacity 2s ease;
 				-webkit-transition: opacity 2s ease;
 				-ms-transition: opacity 2s ease;
 				transition: opacity 2s ease;
 				opacity: 1;
-			}*/
-
-			#header.alt .inner h1 {
-			  animation: 0.7s ease 0s 1 slideInFromRight;
-			}
-
-			#header.alt .inner p {
-			  animation: 0.7s ease 0s 1 slideInFromLeft;
 			}
 
 			@keyframes slideInFromRight {
 			  0% {
 			    transform: translateX(65vw);
+
 			  }
 			  100% {
 			    transform: translateX(0);
+					opacity: 1;
 			  }
 			}
 
@@ -1421,6 +1417,7 @@
 				}
 				100% {
 					transform: translateX(0);
+					opacity: 1;
 				}
 			}
 
@@ -1428,9 +1425,9 @@
 			background-color: black;
 		}
 
-		/*body.is-loading #header.alt .inner {
+		body.is-loading #header.alt .inner {
 			opacity: 0;
-		}*/
+		}
 
 		@media screen and (max-width: 1280px) {
 
@@ -1580,8 +1577,4 @@
 					margin-bottom: 2em;
 				}
 
-		}
-
-		.projects {
-			text-align: center;
 		}
