@@ -20,6 +20,9 @@
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
+		color: #3a3a3a;
+		/*font-weight: bold;*/
+		font-size: 20px;
 	}
 
 	body {
@@ -1176,7 +1179,8 @@
 			width: calc(50% - 2em);
 		}
 
-	@media screen and (max-width: 980px) {
+	/*@media screen and (max-width: 980px) {*/
+	@media screen and (max-width: 1280px) {
 
 		.item header {
 			height: 25em;
@@ -1245,7 +1249,8 @@
 			margin-bottom: 4em;
 		}
 
-		@media screen and (max-width: 980px) {
+		/*@media screen and (max-width: 980px) {*/
+		@media screen and (max-width: 1280px) {
 
 			#wrapper {
 				padding: 2em 0 2em 0;
