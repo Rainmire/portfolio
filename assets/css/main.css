@@ -20,7 +20,8 @@
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
-		color: #3a3a3a;
+		/*color: #3a3a3a;*/
+		color: #000000;
 		/*font-weight: bold;*/
 		/*font-size: 20px;*/
 	}
