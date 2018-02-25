@@ -1,0 +1,1 @@
+Hi, I'm Mitch. I'm a full-stack web developer looking for cool new technologies to add to my toolbox. Visit my website to learn more about me!
